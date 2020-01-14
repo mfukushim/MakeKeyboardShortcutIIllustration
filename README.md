@@ -21,8 +21,10 @@ Shortcut define TSV を押して、shortcut.csv を選択する。
 Key define TSV を押して、keydef.csv を選択する。
   4. OKを押す。
 
+![画面](https://github.com/mfukushim/MakeKeyboardShortcutIIllustration/blob/master/screen.png )
+
 keyboard.xcfと同じディレクトリに pictOut ディレクトリを生成し、その中にショートカットの図版を生成する。
-![サンプル](https://github.com/mfukushim/ChromeHistoryFilter/AltDown.png )
+![サンプル](https://github.com/mfukushim/MakeKeyboardShortcutIIllustration/blob/master/AltDown.png )
 
 - TSVデータフォーマット  
 UTF-8のTSVです。  
