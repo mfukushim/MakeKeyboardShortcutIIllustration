@@ -29,8 +29,9 @@ def do_draw(image, layer, pict_path, shortcut_def, key_def_csv, marker_color):
     data = rd2.readlines()
     for line2 in data:
         row = line2.split('\t')
-        label = ''.join(list(filter(lambda d: d.isalnum(), row[0].replace("/", "Slash").replace("-", "Minus"))))
-        print(label)
+        label = ''.join(list(filter(lambda d: d.isalnum(),
+                                    row[0].replace("/", "Slash").replace("-", "Minus").replace("[", "Brl").replace("]",
+                                                                                                                   "Brr"))))
         base_layer = pdb.gimp_image_get_active_layer(img)
         draw_layer = pdb.gimp_layer_copy(base_layer, True)
         img.add_layer(draw_layer, 0)
